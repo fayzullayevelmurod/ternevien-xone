@@ -1,0 +1,134 @@
+.footer {
+  background: $color-red-dark;
+  padding: 45px 0;
+
+  @include media('xl') {
+    padding: 24px 0;
+  }
+
+  &_top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+    @include media('md') {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &_left {
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      @include media('md') {
+        gap: 12px;
+      }
+    }
+
+    &_right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include media('md') {
+        text-align: center;
+      }
+
+      p {
+        text-align: right;
+
+        @include media('md') {
+          text-align: center;
+        }
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 31px;
+      color: $color-white;
+
+      a {
+        color: $color-white;
+      }
+
+      @include media('md') {
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      &:nth-child(1) {
+        @include media('md') {
+          margin-bottom: 10px;
+        }
+      }
+
+      &.email {
+        text-align: center;
+        max-width: 230px;
+
+        @include media('md') {
+          max-width: 100%;
+        }
+      }
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: right;
+      color: $color-white;
+
+      @include media('md') {
+        text-align: center;
+      }
+    }
+  }
+
+  &_bottom {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-top: 1px solid $color-white;
+    padding-top: 24px;
+
+    @include media('md') {
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 23px;
+      color: $color-white;
+
+      @include media('md') {
+        font-size: 12px;
+        line-height: 15px;
+        order: 1;
+      }
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 23px;
+      text-decoration: underline;
+      color: $color-white;
+
+      @include media('md') {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}

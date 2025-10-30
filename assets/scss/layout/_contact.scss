@@ -1,0 +1,117 @@
+// contact
+.contact {
+  padding: 30px 0;
+  background: $color-red-dark-2;
+
+  h6 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    text-align: left;
+
+    @include media('md') {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    img {
+      width: 79px;
+      height: 79px;
+      display: flex;
+      flex-shrink: 0;
+
+      @include media('md') {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding: 15px 20px;
+    border: 1px solid $color-white;
+    background: #EB0000;
+    border-radius: 15px;
+
+    @include media('lg') {
+      gap: 12px;
+    }
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+      padding: 10px;
+    }
+
+    input {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: $color-dark;
+      border-radius: 15px;
+      border: 1px solid $color-dark;
+      background: $color-white;
+      padding: 10px 20px;
+
+      @include media('md') {
+        height: 40px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+
+    button {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+      color: #F9B2B2;
+      background: #470000;
+      border-radius: 15px;
+      height: 60px;
+
+      @include media('md') {
+        height: 40px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+// contact
+
+// text_block
+.text_block {
+  background: $color-red-2;
+  padding: 120px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: centere;
+    gap: 45px;
+
+    p {
+      font-family: $font-Arial;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      color: $color-white;
+
+      b {
+        font-weight: 600;
+      }
+    }
+  }
+}
+// text_block
