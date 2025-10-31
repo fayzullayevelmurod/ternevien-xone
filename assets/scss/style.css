@@ -789,7 +789,7 @@ p, h1, h2, h3, h4, h5, h6 {
   background: #000000;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 4;
   padding: 20px 40px;
   height: 80px;
 }
@@ -823,7 +823,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 40px 20px;
+    padding: 20px 20px 40px 20px;
     transition: 0.3s ease;
     transform: translateY(-10px);
     opacity: 0;
@@ -1218,6 +1218,149 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.cards {
+  margin-bottom: 120px;
+}
+@media (max-width: 768px) {
+  .cards {
+    margin-bottom: 60px;
+  }
+}
+.cards_in {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1024px) {
+  .cards_in {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .cards_in {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.cards .card {
+  background: #FFFFFF;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.cards .card_img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.cards .card_img span {
+  background: #FF1919;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 2px 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  border-radius: 20px;
+}
+.cards .card_img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+.cards .card_img .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 67px;
+  height: 67px;
+}
+.cards .card_img .play img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 67px;
+  height: 67px;
+}
+.cards .card_text {
+  padding: 10px 15px;
+}
+.cards .card_text span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+.cards .card_text p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+.cards .card:hover .card_in_img {
+  transform: scale(1.1);
+}
+.cards form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 15px 20px;
+  border: 1px solid #FFFFFF;
+  background: #EB0000;
+  border-radius: 15px;
+}
+@media (max-width: 1024px) {
+  .cards form {
+    gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .cards form {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+}
+.cards form input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  background: #FFFFFF;
+  padding: 10px 20px;
+}
+@media (max-width: 768px) {
+  .cards form input {
+    height: 40px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+.cards form button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #F9B2B2;
+  background: #470000;
+  border-radius: 15px;
+  height: 60px;
+}
+@media (max-width: 768px) {
+  .cards form button {
+    height: 40px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+}
+
 .form-tel {
   position: relative;
   display: flex;
@@ -1364,6 +1507,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .online_course_blocks {
   margin-top: 50px;
   display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 1024px) {
   .online_course_blocks {

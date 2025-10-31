@@ -17,6 +17,7 @@
   &_blocks {
     margin-top: 50px;
     display: flex;
+    justify-content: space-between;
 
     @include media('lg') {
       align-items: center;
