@@ -336,12 +336,13 @@ p, h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  &_text {
+  .policy_modal_text {
     padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
+
     @include media('md') {
       padding: 20px;
     }
