@@ -14,22 +14,6 @@ closeBtn.addEventListener("click", () => {
 });
 // form_modal
 
-// policy
-const policyBtns = document.querySelectorAll(".policy_modal_btn");
-const policyModal = document.querySelector(".policy_modal");
-const policyBtnClose = document.querySelector(".policy_modal_close");
-
-policyBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    policyModal.classList.add("active");
-  });
-});
-
-policyBtnClose.addEventListener("click", () => {
-  policyModal.classList.remove("active");
-});
-// policy
-
 // service
 const serviceBtns = document.querySelectorAll(".service_modal_btn");
 const serviceModal = document.querySelector(".service_modal");
@@ -46,7 +30,7 @@ serviceBtnClose.addEventListener("click", () => {
 });
 // service
 
-// policy
+// faq
 const faqBtns = document.querySelectorAll(".faq_modal_btn");
 const faqModal = document.querySelector(".faq_modal");
 const faqBtnClose = document.querySelector(".faq_modal_close");
